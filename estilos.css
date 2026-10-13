@@ -234,3 +234,99 @@ body > .p-container {
     color: #222222 !important;
     font-size: 16px !important;
 }
+
+section {
+    display: block;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section label {
+    font-weight: bold;
+    color: #2c1630;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+section input[type="text"],
+section input[type="email"],
+section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+section textarea {
+resize: vertical;
+}
+
+section button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #2c1630;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4p;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section button[type="submit"]:hover {
+    groun-color: boldenrod;
+}
+
+footer {
+    display: block;
+    clear: both;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+    color: #55555;
+    font-size: 14px;
+}
+
+.container-opinion {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid #2c1630;
+}
+
+.frase-destacada {
+    font-size: 20px;
+    font-style: italic;
+    color: #2c1630;
+    margin: 25px 0;
+    padding-left: 15px;
+    border-left: 3px;
+    line-height: 1.4;
+}
+
+.parrafo-opinion {
+    font-size: 16px;
+    color: #222222;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}

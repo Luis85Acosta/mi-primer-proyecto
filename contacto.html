@@ -35,7 +35,61 @@
 
 </header>
 
-<h1>Contacto</h1>
+<section>
+            <h2>Contacto / Opinion</h2>
+            <p><strong>Dejanos tu opinion</strong></p>
+            
+            <form action="#" method="POST">
+                <p>
+                    <label for="usuario-nombre">Nombre</label><br>
+                    <input type="text" id="usuario-nombre" name="usuario-nombre" required>
+                </p>
+                
+                <p>
+                    <label for="usuario-correo">Correo Electrónico:</label><br>
+                    <input type="email" id="usuario-correo" name="usuario-correo" required>
+                </p>
+                
+                <p>
+                    <label for="usuario-opinion">¿Que importancia tienen las matematicas para ti?</label><br>
+                    <textarea id="usuario-opinion" name="usuario-opinion" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <label for="usuario-opinion">¿En que situacion utilizas mas las matematicas?</label><br>
+                    <textarea id="usuario-opinion" name="usuario-opinion" rows="5" cols="40" required></textarea>
+                </p>
+                
+                <p>
+                    <button type="submit">Enviar Opinion</button>
+                </p>
+            </form>
+            <p><em>
+                Si quieres conocer más sobre matemáticas, puedes visitar
+                <a href="https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwihm6H0r4yXAxVHnloFHTjuHoEYACICCAEQAhoCdnU&co=1&ase=2&gclid=EAIaIQobChMIoZuh9K-MlwMVR55aBR047h6BEAAYASAAEgJ6L_D_BwE&cid=CAASugHkaKXlucd1vQZL6r7ViQsIUjs2pzAcdabsWe9jc7_VSgZgkVEzpgZ_EQhRb4nsa4IlY-mxhO60PD5kGoD0hBjVlGc48xgRLKtuZUadZNLVQO9V1fXnp9obnzj3Rj-tXP3f29-5-mFzHHBQO67hNWJf6GJJOoD2rLrpobN1vr2ghxSelbA_RBUeBwLfPsVgSNgpNopiaySw234Bd9A9JV5E7zFvGCbgwbH8WkMPW6iyHp_gIUwzm8FB-9M&cce=2&category=acrcp_v1_32&sig=AOD64_2_g6_I3vc7ZQP6vCW3dTwSYPIGlg&q&nis=4&adurl=https://la.ixl.com/?partner%3Dgoogle%26campaign%3D1451473666%26adGroup%3D55382888566%26gad_source%3D1%26gad_campaignid%3D1451473666%26gbraid%3D0AAAAADrr3AqiEtI-cQdWERj9fUlDbMawE%26gclid%3DEAIaIQobChMIoZuh9K-MlwMVR55aBR047h6BEAAYASAAEgJ6L_D_BwE&ved=2ahUKEwjs9pv0r4yXAxViSDABHdmYBlwQ0Qx6BAgaEAE" target="_blank">
+                    IXL
+                </a>,
+                un sitio educativo que contiene diferentes recursos para
+                aprender matemáticas.
+            </em></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Página web desarrollada por: <strong>Luis Alberto Guerra Acosta</strong></p>
+        <p>Fecha de realización: Septiembre de 2026</p>
+    </footer>
+
+    <script>
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que la página se recargue bruscamente
+    
+    alert('¡Gracias por tu opinión! Tus respuestas han sido registradas con éxito.');
+    
+    this.reset(); // Limpia automáticamente todas las cajas de texto
+});
+</script>
 
 </body>
 </html>

@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas para todos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f0ff;
+            color: #30205c;
+        }
+
+        header {
+            background-color: #30205c;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        nav {
+            background-color: #6d28d9;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .tarjeta {
+            background-color: #ede9fe;
+            padding: 15px;
+            border-radius: 10px;
+            flex: 1 1 180px;
+        }
+
+        button {
+            background-color: #6d28d9;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #30205c;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+        
+#recursos {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+#recursos img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+
+#recursos iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+#recursos h2,
+#recursos h3 {
+    color: #30265c;
+}
+/* Mostrar una sola sección a la vez */
+main > section {
+    display: none;
+}
+
+main > section:target {
+    display: block;
+}
+
+
+/* Inicio solo se muestra cuando se selecciona Inicio */
+main > section#inicio {
+    display: none;
+}
+
+main > section#inicio:target {
+    display: block;
+}
+
+/* Mostrar Inicio al abrir la página sin una pestaña seleccionada */
+main:not(:has(> section:target)) > section#inicio {
+    display: block;
+}
+
+main:has(> section#recursos:target) > section#recursos {
+    display: block;
+}
+
+main:has(> section#reto:target) > section#reto {
+    display: block;
+}
+
+#inicio img {
+    width: 100%;
+    max-width: 650px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+}
+
+.contenido-temas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 20px;
+}
+
+.tema {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.tema h3 {
+    color: #30265c;
+    margin-bottom: 15px;
+}
+
+.tema img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+.tema p {
+    line-height: 1.7;
+    color: #444444;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🧮 ¡Matemáticas para todos!</h1>
+        <p>Descubre, juega y aprende de una manera divertida.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#aprende">Aprende</a>
+        <a href="#reto">Reto matemático</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            
+<h2>📚 ¡Matemáticas para todos!</h2>
+
+<p class="presentacion">
+    Descubre, juega y aprende de una manera divertida.
+</p>
+<img
+    src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1000&q=80"
+    alt="Material educativo para aprender matemáticas"
+    class="imagen-inicio">
+
+<h2>¿Por qué aprender matemáticas?</h2>
+
+<p>
+    Las matemáticas están presentes en nuestra vida cotidiana.
+    Nos ayudan a pensar, razonar, resolver problemas y comprender
+    el mundo que nos rodea.
+</p>
+
+<p>
+    En esta página encontrarás recursos educativos para explorar
+    conceptos matemáticos de manera sencilla y divertida.
+</p>
+
+<p class="mensaje-final">
+    ¡Anímate a aprender y descubre todo lo que las matemáticas
+    tienen para ti!
+</p>
+        </section>
+
+        <section id="aprende">
+            <h2>¡Explora el mundo matemático!</h2>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>📐 Geometría</h3>
+                    <p>Aprende sobre figuras, formas y medidas.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>🍕 Fracciones</h3>
+                    <p>Descubre cómo dividir una pizza en partes iguales.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>🧠 Lógica</h3>
+                    <p>Desarrolla tu razonamiento resolviendo problemas.</p>
+                </article>
+            </div>
+            
+<div class="contenido-temas">
+
+    <article class="tema">
+        <h3>📐 Geometría: figuras, formas y medidas</h3>
+
+        <img
+            src="geometria.png"
+            alt="Cuaderno con ejercicios de matemáticas">
+
+        <p>
+            La geometría es una rama de las matemáticas que estudia
+            las figuras, las formas, los tamaños y las medidas.
+        </p>
+
+        <p>
+            La encontramos en muchos objetos de nuestra vida cotidiana.
+            Por ejemplo, una ventana puede tener forma rectangular,
+            una moneda forma circular y una señal de tránsito forma triangular.
+        </p>
+
+        <p><strong>Ejemplo:</strong> si un rectángulo mide 5 cm de largo
+        y 3 cm de ancho, su perímetro es 5 + 3 + 5 + 3 = 16 cm.</p>
+    </article>
+
+    <article class="tema">
+        <h3>🍕 Fracciones: partes iguales de un todo</h3>
+
+        <img
+            src="fracciones.png"
+            alt="Pizza para aprender sobre fracciones">
+
+        <p>
+            Una fracción representa una o varias partes iguales
+            en las que se divide un todo.
+        </p>
+
+        <p>
+            El numerador es el número de arriba e indica cuántas
+            partes tomamos. El denominador es el número de abajo
+            e indica en cuántas partes iguales se divide el todo.
+        </p>
+
+        <p><strong>Ejemplo:</strong> si una pizza se divide en 8 partes
+        iguales y comemos 3, hemos comido 3/8 de la pizza.</p>
+    </article>
+
+    <article class="tema">
+        <h3>🧠 Lógica: aprende a razonar</h3>
+
+        <img
+            src="logica.png"
+            alt="Actividades de lógica y razonamiento"
+            width="100%">
+        </img>
+
+        <p>
+            La lógica nos ayuda a analizar situaciones, encontrar
+            relaciones entre los datos y resolver problemas paso a paso.
+        </p>
+
+        <p>
+            Para resolver un problema, primero comprendemos la pregunta,
+            después identificamos los datos y finalmente buscamos
+            una solución.
+        </p>
+
+        <p><strong>Reto:</strong> tienes 12 lápices y quieres repartirlos
+        por igual entre 3 estudiantes. ¿Cuántos lápices recibe cada uno?</p>
+
+        <p><strong>Respuesta:</strong> 12 ÷ 3 = 4 lápices para cada estudiante.</p>
+    </article>
+
+</div>
+        </section>
+        
+<section id="recursos">
+    <h2>📚 Aprende matemáticas con imágenes y videos</h2>
+
+    <p>
+        Las matemáticas están presentes en nuestra vida cotidiana.
+        ¡Descubre, observa y aprende!
+    </p>
+
+    <div class="tarjetas">
+        <article class="tarjeta">
+            <h3>📐 Geometría</h3>
+            <img
+                src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80"
+                alt="Cuaderno con ejercicios de matemáticas"
+                width="100%">
+            <p>
+                Las figuras geométricas nos ayudan a comprender
+                las formas que encontramos a nuestro alrededor.
+            </p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>🔢 Números y operaciones</h3>
+            <img
+                src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80"
+                alt="Expresiones matemáticas"
+                width="100%">
+            <p>
+                Los números nos permiten contar, medir,
+                comparar y resolver problemas.
+            </p>
+        </article>
+    </div>
+
+    <h3>🎥 Las matemáticas en la vida cotidiana</h3>
+
+    <p>
+       Aprende cómo utilizamos la matemática todos los días
+    </p>
+<a href="https://www.youtube.com/results?search_query=matematicas+en+la+vida+cotidiana+para+estudiantes"
+   target="_blank">
+    Ver videos educativos de matemáticas
+</a>
+</section> 
+
+<section id="reto">
+    <h2>🧠 Reto matemático</h2>
+
+    <p>¡Es hora de poner a prueba tus conocimientos!</p>
+
+    <div class="tarjetas">
+        <article class="tarjeta">
+            <h3>🔢 El reto de los lápices</h3>
+            <p>
+                Si tienes 3 cajas y en cada caja hay 4 lápices,
+                ¿cuántos lápices tienes en total?
+            </p>
+
+            <details>
+                <summary>Ver respuesta</summary>
+                <p>
+                    ¡12 lápices! Multiplicamos 3 × 4 = 12.
+                </p>
+            </details>
+        </article>
+    </div>
+</section>
+    </main>
+    <footer>
+        <p>Aprender matemáticas también puede ser divertido. 💜</p>
+        <p>Proyecto de Fundamentos de Programación</p>
+    </footer>
+</body>
+</html>

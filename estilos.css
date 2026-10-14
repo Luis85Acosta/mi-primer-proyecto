@@ -69,7 +69,7 @@ float: left;
 }
 
 .menu-icono {
-    width: 40px;
+    width: 100px;
 }
 
 .menu label {
@@ -329,4 +329,207 @@ footer {
     line-height: 1.7;
     margin-bottom: 20px;
     text-align: justify;
+}
+
+body-portada {
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.body-portada .nav-portada {
+    background-color: #1a091f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    float: none;
+    clear: both;
+}
+
+.body-portada .bloque-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-portada .link-logo {
+    color: #dfb15b;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.body-portada .hero-portada {
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+    display: block;
+    float: none;
+    clear: both;
+}
+
+.body-portada .titulo-principal {
+    font-size: 40px;
+    color: #1a091f;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.body-portada .subtitulo-principal {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.body-portada .linea-decorativa {
+    width: 70px;
+    height: 4px;
+    background-color: #dfb15b;
+    margin: 20px auto 0 auto;
+    border-radius: 2px;
+}
+
+.body-portada .seccion-integrantes {
+    display: block;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+    float: none;
+    clear: both;
+}
+
+.body-portada .titulo-bloque {
+    font-size: 24px;
+    color: #1a091f;
+    margin-bottom: 35px;
+}
+
+.body-portada .grid-tarjetas {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    float: none;
+    clear: both;
+    width: 100%;
+}
+
+.body-portada .tarjeta-individual {
+    display: inline-block; 
+    float: none;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 35px 25px;
+    width: 250px;
+    min-height: 180px;
+    text-decoration: none; 
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.body-portada .icono-tarjeta {
+    font-size: 38px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.body-portada .tarjeta-individual h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #1a091f;
+    font-weight: bold;
+}
+
+.body-portada .btn-tarjeta {
+    font-size: 14px;
+    color: #dfb15b;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.body-portada .tarjeta-individual:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    border-color: #dfb15b;
+}
+
+.bloque-marca {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    float: left;
+}
+
+.sublogo-portada {
+    color: #4a90e2;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    margin-top: 6px;
+    margin-left: 60px;
+}
+
+.sublogo-portada:hover {
+    color: #dfb15b;
+}
+
+body.body-portada .hero-portada {
+    text-align: center;
+    padding: 20px 20px 10px 20px;
+    margin-top: 0;
+    display: block;
+    float: none;
+    clear: both;
+}
+
+body.body-portada .titulo-principal {
+    font-size: 38px;
+    color: #1a091f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+body.body-portada .subtitulo-principal {
+    font-size: 17px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+body.body-portada .linea-decorativa {
+    width: 60px;
+    height: 4px;
+    background-color: #dfb15b;
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+}
+
+body.body-portada .subtitulo-principal {
+    text-align: center !important;
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 750px !important;
 }
